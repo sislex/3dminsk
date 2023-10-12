@@ -1,35 +1,79 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Моделирование и Печать в Минске</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>3D Моделирование и Печать</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <h1>3D Моделирование и Печать Шестеренок в Минске</h1>
-</header>
 
-<section>
-    <h2>Наши услуги</h2>
-    <ul>
-        <li>3D Моделирование</li>
-        <li>3D Печать шестеренок</li>
-        <li>Консультации и оптимизация проектов</li>
-    </ul>
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">3D Мастерская</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Главный баннер -->
+<section class="position-relative text-center py-5">
+    <div class="main-banner-image"></div>
+    <div class="main-banner-content">
+        <h1>3D Моделирование и Печать</h1>
+        <p>Воплотите свои идеи в реальность с нашей помощью!</p>
+        <a href="#" class="btn btn-primary">Заказать услугу</a>
+    </div>
 </section>
 
-<section>
-    <h2>О нас</h2>
-    <p>Мы предоставляем высококачественные услуги по 3D моделированию и печати в Минске. Наша команда специалистов готова воплотить ваши идеи в реальность.</p>
+<!-- Раздел услуг -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Наши услуги</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>3D Моделирование</h4>
+            <p>Создание высококачественных 3D моделей для различных нужд: прототипирование, дизайн, игры и многие другие.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>3D Печать</h4>
+            <p>Быстрая и качественная печать из различных материалов. Создание деталей, прототипов и готовых изделий.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Консультации</h4>
+            <p>Помощь в выборе материалов, оптимизации моделей и решении сложных задач в области 3D технологий.</p>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <h2>Контакты</h2>
-    <p>Телефон: +375 29 576 1520</p>
-    <p>Email: example@email.com</p>
+<!-- Подвал -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 3D Мастерская. Все права защищены.</p>
 </footer>
+
+<!-- Скрипты Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-alpha2/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
