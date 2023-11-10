@@ -1,0 +1,26 @@
+/* задаем переменные*/
+:root {
+    --color1:#4ab1bf;
+    --color2:#2095fc;
+}
+header, footer {
+    padding: 20px 0;
+    background: linear-gradient(to right,  #4ab1bf 0%,#7db9e8 100%,#2095fc 100%);
+}
+/*пустая ячейка для выравнивания*/
+.noclick {
+    width: 165px;
+}
+.gray {
+    background-color: #D3D3D3;
+    width: auto;
+}
+.carousel img {
+    width: 70%;
+}
+.bold-text {
+    font-weight: bold;
+  }
+.d-services a {
+    color: white;
+}
