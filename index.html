@@ -13,10 +13,19 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="navbar sticky-top">
+    <selection>
+        <div class="header-top-bar text-bg-dark p-3 d-services">
+                            <span>Ленина 9 </span>
+                                <a href="tel:+375295761520">+375 29 576 15 20 
+                                </a>
+                            <span> ....@gmail.com</span>
+                        </div>
+                        <!--git commit -am "Скрываются значки и выравнивается текст в разделе 'услуги' при переходе в мобильную версию + колонки занимают по 100% ширины окна. Навбар сворачивается в список на мобильных устройствах и сохраняет кнопки на панели в остальных режимах. На карте поставлена отметка ЛЕНИНА 9. Правая часть футера выравнена по правому краю. + В разделе услуги переделан макет теперь зачек + зависимый от него текст это один контейнер. Убрал все элементы стилей в css документ.-->
+    </selection>
+<header class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="img/icon.png" alt="3dMinsk" width="30" class="d-inline-block align-text-top"> Minsk.by
+            <img src="img/icon.png" alt="3dMinsk" class="d-icon" class="d-inline-block align-text-top"> Minsk.by
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,61 +57,79 @@
     <h2 class="text-center">Услуги</h2>
     <div class="container align-middle">
         <div class="row">
-            <div class="col-5 text-end pb-3">
-                <a href="#d-order" class="link-dark">
-                    <h5>3D Печать</h5>
-                </a>
-                -Скоростные 3D принтеры.<br>
-                -Используемые виды пластика для печати: <span class="bold-text">PLA, PETG, ABS, NEYLON (PA) </span>и др.<br>
-                -3D-печать цельной модели до 40см высотой.<br>
-                -Возможность 3D печати больших партий.
+            <div class="container col-sm-6 col-12">
+                <div class="row">
+                    <div class="col-12 col-sm-10 text-center text-sm-end pb-3">
+                        <a href="#d-order" class="link-dark">
+                            <h5>3D Печать</h5>
+                        </a>
+                        -Скоростные 3D принтеры.<br>
+                        -Используемые виды пластика для печати: <span class="bold-text">PLA, PETG, ABS, NEYLON (PA) </span>и др.<br>
+                        -3D-печать цельной модели до 40см высотой.<br>
+                        -Возможность 3D печати больших партий.
+                    </div>
+                    <div class="col-2 d-none d-sm-block">
+                        <a href="#d-order" class="link-dark">
+                            <i class="icon-print-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-1">
-                <a href="#d-order" class="link-dark">
-                    <i class="icon-print-1"></i>
-                </a>
-            </div>
-            <div class="col-1 text-end">
-                <a href="#d-order" class="link-dark">
-                    <img width="24px" src="img/icon.png" alt="logo" class="img_fluid ">
-                </a>
-            </div>
-            <div class="col-5 pb-3">
-                <a href="#d-order" class="link-dark">
-                    <h5>Услуги макетирования</h5>
-                </a>
-                -Уникальный дизайн.<br>
-                -Быстрое выполнение.<br>
-                -Высокое качество.
+        <!--правая часть-->
+            <div class="container col-12 col-sm-6">
+                <div class="row">
+                    <div class="col-2 text-end d-none d-sm-block">
+                        <a href="#d-order" class="link-dark">
+                            <img class="d-icon" src="img/icon.png" alt="logo" class="img_fluid ">
+                        </a>
+                    </div>
+                    <div class="col-sm-10 col-12 pb-3 text-center text-sm-start">
+                        <a href="#d-order" class="link-dark">
+                            <h5>Услуги макетирования</h5>
+                        </a>
+                        -Уникальный дизайн.<br>
+                        -Быстрое выполнение.<br>
+                        -Высокое качество.
+                    </div>
+                </div>
             </div>
         </div>
-
+<!-- вторая часть услуг-->
         <div class="row">
-            <div class="col-5 text-end">
-                <a href="#d-order" class="link-dark">
-                    <h5>3D Моделирование по образцу</h5>
-                </a>
-                -Создание 3D модели любой сложности.<br>
-                -Стоимость от 5 рублей, срок-от 2 дней.<br>
-                -Возможность моделирования со сломанной детали.
+            <div class="container col-sm-6 col-12 ">
+                <div class="row">
+                    <div class="col-sm-10 col-12 text-center text-sm-end pb-3">
+                        <a href="#d-order" class="link-dark">
+                            <h5>3D Моделирование по образцу</h5>
+                        </a>
+                        -Создание 3D модели любой сложности.<br>
+                        -Стоимость от 5 рублей, срок-от 2 дней.<br>
+                        -Возможность моделирования со сломанной детали.
+                    </div>
+                    <div class="col-2 d-none d-sm-block">
+                        <a href="#d-order" class="link-dark">
+                            <i class="icon-laptop"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-1">
-                <a href="#d-order" class="link-dark">
-                    <i class="icon-laptop"></i>
-                </a>
-            </div>
-            <div class="col-1 text-end ">
-                <a href="#d-order" class="link-dark">
-                    <i class="icon-cog"></i>
-                </a>
-            </div>
-            <div class="col-5">
-                <a href="#d-order" class="link-dark">
-                    <h5>Прототипирование, персональная разработка по вашей идее</h5>
-                </a>
-                -Широкий спектр материалов для 3D прототипов.<br>
-                -Возможность высокой детализации моделей.<br>
-                -Работа с чертежами, проектной документацией.
+<!--правая часть-->
+            <div class="container col-sm-6 col-12 ">
+                <div class="row">
+                    <div class="col-2 text-end d-none d-sm-block">
+                        <a href="#d-order" class="link-dark">
+                            <i class="icon-cog"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-10 col-12 text-center text-sm-start  pb-3">
+                        <a href="#d-order" class="link-dark">
+                            <h5>Прототипирование, персональная разработка по вашей идее</h5>
+                        </a>
+                        -Широкий спектр материалов для 3D прототипов.<br>
+                        -Возможность высокой детализации моделей.<br>
+                        -Работа с чертежами, проектной документацией.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -201,23 +228,25 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d146.92395771699108!2d27.560353383729534!3d53.900055050004575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1699201489899!5m2!1sru!2sby" width="70%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="d-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.782225045106!2d27.557828076765688!3d53.90007457245514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfc183223f6f%3A0xd7bd78cdad289faa!2z0YPQu9C40YbQsCDQm9C10L3QuNC90LAgOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1699784995606!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
 <footer id="footer" class="footer">
-    <div class="container width-100">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-10 text-left">
+            <div class="col-sm-6 text-left pb-3">
                 <h3>Контакты:</h3>
                 Life: +375 29 226 72 86<br>
                 MТС: +375 29 576 15 20
                 <br> E-mail: 3D@mail.ru
-                <br> Адрес: г.Минск, ул.Ленина, д.9.
+                <br> Адрес: Республика Беларусь, г.Минск, ул.Ленина д.9
+                <br> Пн-Пт 09.00-16.00
             </div>
-            <div class="col-sm-2 text-right">
-                <p>Продажа и печать 3D моделей.</p>
-                <p>Моделирование под заказ</p>
+            <div class="col-sm-6 text-sm-end">
+                Продажа и печать 3D моделей.<br>
+                Моделирование под заказ.<br>
+                © 2023 3dMinsk.by
             </div>
         </div>
     </div>
