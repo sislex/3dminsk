@@ -24,3 +24,12 @@ header, footer {
 .d-services a {
     color: white;
 }
+
+#d-map {
+    width: 90%;
+    height: 300px;
+    border: 2;
+}
+.d-icon {
+    width: 30px;
+}
