@@ -74,7 +74,7 @@ let productsl = [
 ];
 //Шаблон
 let div = document.getElementById('productsl');
-
+let pElements = [];
 productsl.forEach(product => {
   let p = document.createElement('p');
   p.innerHTML = `<div class="card mt-3">
@@ -100,5 +100,8 @@ productsl.forEach(product => {
       </div>
   </div>
 </div>`;
+  pElements.push(p);
+});
+pElements.forEach(p => {
   div.appendChild(p);
 });
