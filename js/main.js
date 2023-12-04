@@ -99,9 +99,15 @@ productsl.forEach(product => {
           </div>
       </div>
   </div>
-</div>`;
-  pElements.push(p);
+</div>`;})
+/*
+let goods = '';
+productsl.forEach(product => {
+  let tpl = `<div>${product.prise}</div>`;
+  goods += tpl; 
 });
+div.innerHTML = goods;
+*/
 pElements.forEach(p => {
   div.appendChild(p);
 });
