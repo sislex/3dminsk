@@ -39,34 +39,35 @@
     <!-- Кнопки -->
     <div>
         <div class="container mt-2">
-        <div class="col-6 btn-group" role="group" aria-label="Sort products">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" data-sort="all" autocomplete="off" checked>
-            <label class="btn btn-outline-dark" for="btnradio1">Все товары</label>
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" data-sort="stock" autocomplete="off">
-            <label class="btn btn-outline-dark" for="btnradio2">В наличии</label>
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" data-sort="available" autocomplete="off">
-            <label class="btn btn-outline-dark" for="btnradio3">Доступны к печати</label>
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" data-sort="plastic" autocomplete="off">
-            <label class="btn btn-outline-dark" for="btnradio4">Пластик</label>
+            <div class="col-6 btn-group" role="group" aria-label="Sort products">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark" for="btnradio1" onclick="handleOnClick()">Все товары</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio2" onclick="handleOnClick2()">В наличии</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio3" onclick="handleOnClick3()">Доступны к печати</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio4" onclick="handleOnClick4()">Пластик</label>
+            </div>
         </div>
-    </div>
     <!-- Подпись категории -->
-        <div class="container names mt-3" data-type="all">
+    
+        <div class="container names mt-3" id="all">
             <h3 class="row">Все товары</h3>
         </div>
-        <div class="names" data-type="stock">
-            <div class="container  mt-3"> 
+        <div class="names">
+            <div class="container  mt-3" id="stock"> 
                 <h3 class="row">В наличии</h3>
             </div>
         </div>
-        <div class="container names mt-3" data-type="available">
+        <div class="container names mt-3" id="available">
             <h3 class="row">Доступны к печати</h3>
         </div>
-        <div class="container names mt-3" data-type="plastic">
+        <div class="container names mt-3" id="plastic">
             <h3 class="row">Пластик</h3>
         </div>
         <!-- Раделительная полоса с подказками о разметке -->
-        <div class="container">
+        <div class="container d-md-block d-none ">
             <div class="row">
                 <div class="col-md-3 border text-center">
                     <h5 class="card-title">Фото товара</h5>
@@ -83,19 +84,8 @@
             </div>
         </div>
         <!-- Информация о товаре с разделением по категориям -->
-        <!-- Все -->
-        <div class="container product mt-3" data-type="all">
-        </div>
-        <!-- В наличии -->
-        <div class="product" data-type="stock">
-        </div>
-        <!-- Доступны к печати -->
-        <div class="container product mt-3" data-type="available" id="productsl">
-        </div>
-        <!-- Пластик -->
-        <div class="container product mt-3" data-type="plastic">
-        </div>
-    </div> 
+        <div class="container product mt-3" id="products">
+        </div>   
     <!--Футер-->
     <footer id="footer" class="footer">
         <div class="container">
