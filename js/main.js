@@ -9,23 +9,14 @@ function showHideHeadings(category) {
   }
 }
 // функции по клику выводящие информацию (сократить до одной функции)
-function handleOnClick() {
+function handleOnClick(category) {
+  document.getElementById('products').innerHTML = renderProducts(category);
+  showHideHeadings(category);
+}
+function handleOnClick1(category) {
   document.getElementById('products').innerHTML = renderProducts();
-  showHideHeadings('all');
+  showHideHeadings(category);
 }
-function handleOnClick2() {
-  document.getElementById('products').innerHTML = renderProducts('stock');
-  showHideHeadings('stock');
-}
-function handleOnClick3() {
-  document.getElementById('products').innerHTML = renderProducts('available');
-  showHideHeadings('available');
-}
-function handleOnClick4() {
-  document.getElementById('products').innerHTML = renderProducts('plastic');
-  showHideHeadings('plastic');
-}
-
 // при переходе на страницу открываются элементы all
 window.onload = function() {
   document.getElementById('products').innerHTML = renderProducts();

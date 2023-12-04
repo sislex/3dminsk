@@ -41,13 +41,13 @@
         <div class="container mt-2">
             <div class="col-6 btn-group" role="group" aria-label="Sort products">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-dark" for="btnradio1" onclick="handleOnClick()">Все товары</label>
+                    <label class="btn btn-outline-dark" for="btnradio1" onclick="handleOnClick1('all')">Все товары</label>
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-dark" for="btnradio2" onclick="handleOnClick2()">В наличии</label>
+                <label class="btn btn-outline-dark" for="btnradio2" onclick="handleOnClick('stock')">В наличии</label>
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-dark" for="btnradio3" onclick="handleOnClick3()">Доступны к печати</label>
+                <label class="btn btn-outline-dark" for="btnradio3" onclick="handleOnClick('available')">Доступны к печати</label>
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                <label class="btn btn-outline-dark" for="btnradio4" onclick="handleOnClick4()">Пластик</label>
+                <label class="btn btn-outline-dark" for="btnradio4" onclick="handleOnClick('plastic')">Пластик</label>
             </div>
         </div>
     <!-- Подпись категории -->
